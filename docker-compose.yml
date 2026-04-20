@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  onder-api:
+    build: .
+    container_name: onder-api
+    restart: unless-stopped
+    ports:
+      - "4100:4000"
+    env_file:
+      - .env
+    networks:
+      - onder-api-network
+
+networks:
+  onder-api-network:
+    driver: bridge
