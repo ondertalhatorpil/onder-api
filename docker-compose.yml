@@ -14,6 +14,7 @@ services:
     networks:
       - onder-api-network
       - besiraga-network
+      - talep-network
 
   onder-db:
     image: mysql:8.0
