@@ -1,0 +1,18 @@
+INSERT INTO mulkler (sira_no, adres, il, ilce, nitelik, yuz_olcumu, kiraci, kira_geliri, kira_geliri_aciklama, durum, kira_baslangic_tarihi, kira_artis_zamani, notlar) VALUES
+(1, 'Gaziosmanpaşa ilçesi karayolları mah. 6619 ada, 8 parselde ki Tem Avrasya Projesinde B Blok 109 Bağımsız bölüm numara', 'İSTANBUL', 'GAZİOSMANPAŞA', 'dukkan', '616 M2 bürüt', 'BİM', NULL, 'Aylık ciro %2,4', 'kirali', '2021-06-19', 'HER YIL HAZİRAN', NULL),
+(2, 'Gaziosmanpaşa ilçesi karayolları mah. 6619 ada, 8 parselde ki Tem Avrasya Projesinde C Blok 113 Bağımsız bölüm numara', 'İSTANBUL', 'GAZİOSMANPAŞA', 'dukkan', '591 M2 bürüt', 'TARIM KREDİ', 81192.30, NULL, 'kirali', '2021-10-01', 'HER YIL EKİM', NULL),
+(3, 'Gaziosmanpaşa ilçesi karayolları mah. 6619 ada, 8 parselde ki Tem Avrasya Projesinde C Blok 114 Bağımsız bölüm numara', 'İSTANBUL', 'GAZİOSMANPAŞA', 'dukkan', '445 M2 bürüt', 'GÜNEŞ ANAOKULU', 103661.00, NULL, 'kirali', '2022-03-09', 'HER YIL MART AYI', NULL),
+(4, 'Başakşehir ilçesi ikitelli mah. 566 ada, 1 parseldeki OLiMPA AVM projesinde 2.kat 74 numara', 'İSTANBUL', 'BAŞAKŞEHİR', 'dukkan', '262 M2 bürüt', 'FUZUL/ENES KUNDURA', 46376.00, NULL, 'kirali', '2023-03-15', 'HER YIL MART AYI', NULL),
+(5, 'Başakşehir ilçesi ikitelli mah. 569 ada, 13 parseldeki Başakcity projesinde 57 Bağımsız bölüm numara', 'İSTANBUL', 'BAŞAKŞEHİR', 'dukkan', '54 M2 brüt', 'FUZUL / MANAV', 30000.00, NULL, 'kirali', '2025-06-10', 'HER YIL HAZİRAN', NULL),
+(6, 'Dr. Sadık Ahmet caddesi çimenli sokak Emin Apartmanı no:29 Daire: 7 Avcılar', 'İSTANBUL', 'AVCILAR', 'daire', '145 M2', 'Aziz Topaloğlu', 10000.00, NULL, 'kirali', '2020-07-10', 'HER YIL TEMMUZ', NULL),
+(7, 'Dr. Sadık Ahmet caddesi çimenli sokak Emin Apartmanı no:29 Daire: 6 Avcılar', 'İSTANBUL', 'AVCILAR', 'daire', '145 M2', NULL, NULL, NULL, 'kullanim_hakki_bizde_degil', NULL, NULL, 'KULLANIM HAKKI BİZDE DEĞİL'),
+(8, 'Akşemsettin Mah. Şair Fuzuli Sok. No:22 Fatih/İstanbul', 'İSTANBUL', 'FATİH', 'daire', '694,3 m2', 'Genel Merkez', NULL, NULL, 'kirali', NULL, NULL, 'Genel Merkez kullanımı'),
+(9, 'Akşemsettin Mah. Şair Fuzuli Sok. No:22 Fatih/İstanbul', 'İSTANBUL', 'FATİH', 'daire', '694,3 m2', 'Genel Merkez', NULL, NULL, 'kirali', NULL, NULL, 'Genel Merkez kullanımı'),
+(10, 'Akşemsettin Mah. Şair Fuzuli Sok. No:22 Fatih/İstanbul', 'İSTANBUL', 'FATİH', 'daire', '694,3 m2', 'Genel Merkez', NULL, NULL, 'kirali', NULL, NULL, 'Genel Merkez kullanımı'),
+(11, 'Bardakçı köyü 739 parsel Merkez/Van', 'VAN', 'MERKEZ', 'arsa', '206,39 m2', NULL, NULL, NULL, 'bos', NULL, NULL, NULL),
+(12, 'Bardakçı köyü 738 parsel Merkez/Van', 'VAN', 'MERKEZ', 'arsa', '3.184,35 m2', NULL, NULL, NULL, 'bos', NULL, NULL, NULL),
+(13, 'Bardakçı köyü 92 parsel Merkez/Van', 'VAN', 'MERKEZ', 'arsa', '71.200 m2', NULL, NULL, NULL, 'bos', NULL, NULL, NULL),
+(14, 'Bardakçı köyü 737 parsel Merkez/Van', 'VAN', 'MERKEZ', 'arsa', '65.096,22 m2', NULL, NULL, NULL, 'bos', NULL, NULL, NULL),
+(15, 'Karaman okul arazisi', 'KARAMAN', NULL, 'arsa', NULL, NULL, NULL, NULL, 'bos', NULL, NULL, NULL),
+(16, 'İstanbul Fatih Hasan Halife 2026 Ada 18 Parsel', 'İSTANBUL', 'FATİH', 'kargir_ev', '45,7 M2', NULL, NULL, NULL, 'bos', NULL, NULL, NULL),
+(17, 'İstanbul Fatih Hasan Halife 2026 Ada 19 Parsel', 'İSTANBUL', 'FATİH', 'arsa', '42,2 M2', NULL, NULL, NULL, 'bos', NULL, NULL, NULL);

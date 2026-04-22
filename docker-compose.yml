@@ -9,9 +9,40 @@ services:
       - "4100:4000"
     env_file:
       - .env
+    depends_on:
+      - onder-db
     networks:
       - onder-api-network
       - besiraga-network
+
+  onder-db:
+    image: mysql:8.0
+    container_name: onder-db
+    restart: unless-stopped
+    environment:
+      - MYSQL_ROOT_PASSWORD=${ONDER_DB_PASS}
+      - MYSQL_DATABASE=${ONDER_DB_NAME}
+    volumes:
+      - onder_db_data:/var/lib/mysql
+    ports:
+      - "4101:3306"
+    networks:
+      - onder-api-network
+    command: --default-authentication-plugin=mysql_native_password
+
+  onder-phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    container_name: onder-phpmyadmin
+    restart: unless-stopped
+    ports:
+      - "4102:80"
+    environment:
+      - PMA_HOST=onder-db
+      - PMA_PORT=3306
+    depends_on:
+      - onder-db
+    networks:
+      - onder-api-network
 
 networks:
   onder-api-network:
@@ -19,3 +50,6 @@ networks:
   besiraga-network:
     external: true
     name: besiragaonderorgtr_besiraga-network
+
+volumes:
+  onder_db_data:
