@@ -19,6 +19,8 @@ services:
     image: mysql:8.0
     container_name: onder-db
     restart: unless-stopped
+    env_file:
+      - .env
     environment:
       - MYSQL_ROOT_PASSWORD=${ONDER_DB_PASS}
       - MYSQL_DATABASE=${ONDER_DB_NAME}
