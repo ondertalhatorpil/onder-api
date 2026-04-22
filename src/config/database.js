@@ -21,7 +21,18 @@ const onderPool = mysql.createPool({
     connectionLimit: 10,
 });
 
+const talepPool = mysql.createPool({
+    host: process.env.TALEP_DB_HOST,
+    port: process.env.TALEP_DB_PORT,
+    user: process.env.TALEP_DB_USER,
+    password: process.env.TALEP_DB_PASS || '',
+    database: process.env.TALEP_DB_NAME,
+    waitForConnections: true,
+    connectionLimit: 10,
+});
+
 module.exports = {
     besiragarPool: besiragarPool.promise(),
+    talepPool: talepPool.promise(),
     onderPool: onderPool.promise()
 };

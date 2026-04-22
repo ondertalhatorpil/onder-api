@@ -52,6 +52,9 @@ networks:
   besiraga-network:
     external: true
     name: besiragaonderorgtr_besiraga-network
+  talep-network:        
+    external: true
+    name: taleponderorgtr_talep-network
 
 volumes:
   onder_db_data:
