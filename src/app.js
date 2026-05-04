@@ -33,7 +33,7 @@ app.use('/api/yurtlar', yurtlarRoutes);
 app.use('/api/projeler', projelerRoutes);
 app.use('/api/burslar', burslarRoutes);
 app.use('/api/talep', talepRoutes);
-app.use('/kariyer', kariyerRoutes);
+app.use('/api/kariyer', kariyerRoutes);
 
 
 
