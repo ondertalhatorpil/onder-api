@@ -31,8 +31,19 @@ const talepPool = mysql.createPool({
     connectionLimit: 10,
 });
 
+const kariyerPool = mysql.createPool({
+    host: process.env.KARIYER_DB_HOST,
+    port: process.env.KARIYER_DB_PORT,
+    user: process.env.KARIYER_DB_USER,
+    password: process.env.KARIYER_DB_PASS,
+    database: process.env.KARIYER_DB_NAME,
+    waitForConnections: true,
+    connectionLimit: 10,
+});
+
 module.exports = {
     besiragarPool: besiragarPool.promise(),
     talepPool: talepPool.promise(),
-    onderPool: onderPool.promise()
+    onderPool: onderPool.promise(),
+    kariyerPool: kariyerPool.promise(),
 };

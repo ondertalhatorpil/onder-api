@@ -11,6 +11,8 @@ const yurtlarRoutes = require('./modules/yurtlar/yurtlar.routes');
 const projelerRoutes = require('./modules/projeler/projeler.routes');
 const burslarRoutes = require('./modules/burslar/burslar.routes');
 const talepRoutes = require('./modules/talep/talep.routes');
+const kariyerRoutes = require('./modules/kariyer/kariyer.routes');
+
 
 
 const app = express();
@@ -31,6 +33,8 @@ app.use('/api/yurtlar', yurtlarRoutes);
 app.use('/api/projeler', projelerRoutes);
 app.use('/api/burslar', burslarRoutes);
 app.use('/api/talep', talepRoutes);
+app.use('/kariyer', kariyerRoutes);
+
 
 
 const PORT = process.env.PORT || 4000;

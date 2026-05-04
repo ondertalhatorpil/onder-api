@@ -15,6 +15,7 @@ services:
       - onder-api-network
       - besiraga-network
       - talep-network
+      - kariyer-network
 
   onder-db:
     image: mysql:8.0
@@ -56,6 +57,9 @@ networks:
   talep-network:        
     external: true
     name: taleponderorgtr_talep-network
+  kariyer-network:         
+    external: true
+    name: onder-wlan
 
 volumes:
   onder_db_data:
